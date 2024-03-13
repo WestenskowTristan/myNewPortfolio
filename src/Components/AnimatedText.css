@@ -1,0 +1,45 @@
+.animated-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 180px;
+}
+
+.animated-text-line {
+  font-family: "Crimson Text serrif";
+  color: #a3b4c8;
+  opacity: 0;
+  margin-bottom: -35px;
+}
+
+.animate-right {
+  animation: slideFromRight 1.5s ease forwards;
+}
+
+.animate-left {
+  animation: slideFromLeft 1.5s ease forwards;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
