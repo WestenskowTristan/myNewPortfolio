@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 180px;
 }
 
 .animated-text-line {
@@ -12,6 +11,12 @@
   color: #a3b4c8;
   opacity: 0;
   margin-bottom: -35px;
+}
+
+@media screen and (max-width: 1000px) {
+  .animated-text-line {
+    margin-bottom: -15px;
+  }
 }
 
 .animate-right {
